@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Surprise 🎁</title>
+  <style>
+    body {
+      background: #fff0f6;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 40px;
+    }
+    h2 {
+      color: #d63384;
+      font-size: 28px;
+    }
+    .box {
+      width: 160px;
+      height: 160px;
+      background: white;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 20px;
+      padding-top: 55px;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #ff4f9a;
+      font-weight: bold;
+      padding: 20px;
+    }
+    .option-btn {
+      background: #ff4f9a;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Mudduuu pick 1 surprise 😚🎁</h2>
+
+  <div class="box" onclick="loveLetter()">Surprise 1</div>
+  <div class="box" onclick="optionChoose()">Surprise 2</div>
+  <div class="box" onclick="askAnything()">Surprise 3</div>
+
+  <div id="message"></div>
+
+  <script>
+
+    function loveLetter() {
+      document.getElementById('message').innerHTML =
+        "My Muddu ❤️<br><br>Thank you for being the sweetest part of my life. You make my days softer, my heart calmer, and my world brighter. I love you more than you can imagine 💗";
+    }
+
+    function optionChoose() {
+      document.getElementById('message').innerHTML =
+        "Choose one muddu 😚<br><br>" +
+        "<button class='option-btn' onclick='spa()'>Option A: Free Spa 🧖‍♂️✨</button>" +
+        "<button class='option-btn' onclick='pizza()'>Option B: Fun Pizza Date 🍕❤️</button>";
+    }
+
+    function spa() {
+      document.getElementById('message').innerHTML =
+        "Yayyy! You chose Spa Day! 🧖‍♂️✨<br><br>You get a relaxing spa from me ❤️";
+    }
+
+    function pizza() {
+      document.getElementById('message').innerHTML =
+        "Fun Pizza Date it is! 🍕😚<br><br>We’re going out for a cute pizza date soon!";
+    }
+
+    function askAnything() {
+      document.getElementById('message').innerHTML =
+        "Ask anything you want from me muddu 😘<br><br>I’ll do it for you ❤️";
+    }
+
+  </script>
+
+</body>
+</html>
