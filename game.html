@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heart Tapping Game</title>
+  <style>
+    body {
+      background: #ffe6f7;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 40px;
+    }
+    h2 {
+      color: #d63384;
+      font-size: 28px;
+    }
+    #heart {
+      font-size: 80px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    #score {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #444;
+    }
+    .btn {
+      margin-top: 40px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background: #ff4f9a;
+      color: white;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Tap the heart fast muddu ❤️</h2>
+
+  <div id="heart" onclick="increase()">❤️</div>
+
+  <div id="score">Score: 0</div>
+
+  <button class="btn" onclick="finish()">Done</button>
+
+  <script>
+    let score = 0;
+
+    function increase() {
+      score++;
+      document.getElementById("score").innerHTML = "Score: " + score;
+    }
+
+    function finish() {
+      window.location.href = "surprise.html";
+    }
+  </script>
+
+</body>
+</html>
